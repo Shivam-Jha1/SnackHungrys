@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sign"
+        android:background="@color/bgColor1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SignActivity">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="139dp"
+            android:layout_height="139dp"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="136dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="88dp"
+            android:text="Snack Hungrys"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="79dp"
+            android:text="Sign Up Here"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <EditText
+            android:id="@+id/editEmail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="59dp"
+            android:drawableLeft="@drawable/mail"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <EditText
+            android:id="@+id/editPass1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/lock"
+            android:drawableRight="@drawable/eye_hide"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="@+id/editEmail1"
+            app:layout_constraintTop_toBottomOf="@+id/editEmail1" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="195dp"
+            android:text="Or"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPass1" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="144dp"
+            android:text="SignUp with"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fbBtns"
+            android:layout_width="152dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btnshape2"
+            android:drawableLeft="@drawable/facebook"
+            android:drawablePadding="5dp"
+            android:text="Facebook"
+            app:layout_constraintEnd_toStartOf="@+id/googleBtns"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/googleBtns"
+            android:layout_width="152dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/btnshape2"
+            android:drawableLeft="@drawable/google"
+            android:drawablePadding="5dp"
+            android:text="Google"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signUpBtn"
+            android:layout_width="173dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="141dp"
+            android:background="@drawable/btnshape1"
+            android:text="Create Account"
+            android:textColor="@color/bgColor1"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/signUpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="113dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="113dp"
+            android:text="Already Have An Account?"
+            android:textColor="@color/textColor1"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signUpBtn" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="99dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="103dp"
+            android:drawableLeft="@drawable/usernew"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="text"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
